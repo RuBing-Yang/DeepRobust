@@ -1,4 +1,7 @@
 train_phase1
 track1_test1
+
 __pycache__
+*.pyc
+
 models

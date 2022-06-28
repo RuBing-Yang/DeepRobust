@@ -22,8 +22,8 @@ if __name__ == '__main__':
             #transforms.ToTensor(),
         ]))#
 
-    train_loader = DataLoader(clean_train_data, batch_size=4, shuffle=True)
-    test_loader = DataLoader(clean_train_data, batch_size=4, shuffle=True)
+    train_loader = DataLoader(clean_train_data, batch_size=16, shuffle=True)
+    test_loader = DataLoader(clean_train_data, batch_size=16, shuffle=True)
 
     # resnet50
     train_net = resnet.Net(resnet.Bottleneck, [3,8,36,3], num_classes=20)
